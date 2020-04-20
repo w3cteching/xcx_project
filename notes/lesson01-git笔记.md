@@ -43,11 +43,6 @@
 
      git日志简化，在一行显示：git log --pretty=oneline
 
-     如果首次安装git，使用时需要配置git用户名和git邮箱
-
-     配置用户名： git config --global user.name '你的用户名'
-     配置邮箱：git config --global user.email '你的用户名'
-
 
    > 注意：git管理的不是文件，管理的是”修改“
 
