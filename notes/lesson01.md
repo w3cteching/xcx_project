@@ -105,7 +105,6 @@
       5.推送本地代码到远程
 
 
-
         git push  推上去  本地-->远程
 
         git push origin master -u
@@ -120,6 +119,18 @@
 
         git rebase origin/master
 
+
+
+==============================
+
+  从远程到本地：[推荐]
+
+    git clone git@github.com:w3cteching/suyuhao_project.git
+
+作业：
+
+  1.将P7的月考机试题推送到github你注册的帐号下（提前创建好远程仓库）
+  2.说课（用微信语音在微信群里总结回顾一天讲的东西）
 
 
         
