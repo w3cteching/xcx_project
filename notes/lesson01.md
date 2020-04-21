@@ -33,6 +33,7 @@
 
     mac查看文件：ls  -al 查看隐藏文件
     清屏：clear
+
 ## 三、git文件管理命令
 
     查看文件状态：git status
@@ -118,7 +119,6 @@
         git fetch origin //获取远程所有分支
 
         git rebase origin/master
-
 
 
 ==============================
