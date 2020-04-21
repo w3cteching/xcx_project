@@ -72,5 +72,11 @@
          git push origin :要删除的远程分支名
 
 
+   添加当前分支与远程的跟踪：例如：当前分支是dev
+   
+    格式： git branch --set-upstream-to=origin/远程分支名
+
+    例如： git branch --set-upstream-to=origin/dev
+
 
 ## tag管理
