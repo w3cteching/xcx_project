@@ -1,0 +1,23 @@
+{
+  "name": "shixun_1906A",
+  "version": "1.0.0",
+  "description": "这是一个用于测试的项目",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/w3cteching/xcx_project.git"
+  },
+  "keywords": [],
+  "author": "haojinli",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/w3cteching/xcx_project/issues"
+  },
+  "homepage": "https://github.com/w3cteching/xcx_project#readme",
+  "dependencies": {
+    "vue": "^2.6.11"
+  }
+}
