@@ -209,6 +209,23 @@ version定义规则
       
      删除远程地址： git remote rm origin
 
+   设置远程推送的默认跟踪：git push 远程地址 要推送的分支 -u
+
+     其中：-u 代表默认远程跟踪，下次可以直接输入 git push 回车
+
+
+## 如何用可视化工具来操作git(即不用命令，用软件操作)
+
+  git图形化软件：(git GUI)
+
+    git GUI
+    sourcetree: https://www.cnblogs.com/fisherbook/p/11397168.html
+    webstorm:代码编辑器 内置集成git
+    
+    vs code：操作git
+    
+
+    
 
 
 ## 七、使用github制作静态网站
