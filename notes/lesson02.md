@@ -221,13 +221,51 @@ version定义规则
     git GUI
     sourcetree: https://www.cnblogs.com/fisherbook/p/11397168.html
     webstorm:代码编辑器 内置集成git
-    
-    vs code：操作git
-    
 
-    
+    vs code：操作git
+
+> 通常在公司中用命令为主，可视化为辅助（或结合两者的优势来使用）
 
 
 ## 七、使用github制作静态网站
 
+   >适用场景：
+
+      1.可以充当小型的个人博客网站（当然是免费哦，不用买空间和域名）
+
+      2.你可以把个人简历推送上去，供其他人浏览
+      
+      3.....
+
+
   > 如何利用github制作静态网站呢？？？？
+
+    主要通过git pages来实现静态网站
+
+      第一步：找到要生成静态网站的仓库    例如：w3cteching/xcx_project
+      第二步：打开这个仓库的settings-->GitHub Pages
+      第三步：有两种实现静态网站的方式： 
+
+        第一种：项目方式
+        
+           source:【推荐】
+
+            选择用master主分支创建静态网站
+
+            选择用master分支下的docs/创建静态网站  【推荐】
+
+            无论哪种方式，都会生成一个可访问的网站：
+            
+            Your site is ready to be published at http://用户名.github.io/仓库名/.
+
+      第二种：公司组织方式：类似于企业官网
+
+
+       创建一个新仓库：仓库名必须是：  用户名.github.io  (用户名就是你登录的账号名)
+
+
+         Theme Chooser:主题
+
+## 八、使用码云来管理项目  
+
+
