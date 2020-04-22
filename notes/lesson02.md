@@ -80,6 +80,12 @@
          git push origin :要删除的远程分支名
 
 
+   添加当前分支与远程的跟踪：例如：当前分支是dev
+   
+    格式： git branch --set-upstream-to=origin/远程分支名
+
+    例如： git branch --set-upstream-to=origin/dev
+
 
 ## 五、tag管理:即项目发布的版本管理 例如：v1.0.0  v1.2.1
 
@@ -174,5 +180,35 @@ version定义规则
        注意：如果git push不上去，
 
        git branch --set-upstream-to...........
+
+
+   分支笔记补充：
+
+      拉取远程分支到本地并合并：
+
+         git fetch origin 拉取所有远程分支信息
+
+         git branch 只查看本地分支
+         git branch -r 查看远程分支
+         git branch -a 查看所有分支（包括本地和远程分支）
+         
+         例如：想在本地dev分支上合并远程的master(或远程小组成员的分支)上的信息
+         git checkout dev //先切换到当前分支
+
+         git merge origin/master  //再合并远程的master分支到dev
+
+        
+    测试远程连接是否成功：ssh -T git@github.com
+
+     如果测试成功会显示：Hi 远程帐号名! You've successfully authenticated,
+
+
+    添加和删除远程地址：  
+
+     添加远程仓库地址：git remote add origin 远程仓库地址
+      
+     删除远程地址： git remote rm origin
+
+
 
 ## 七、使用github制作静态网站
