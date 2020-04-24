@@ -1,3 +1,4 @@
+@import "/public/style/theme1.wxss";
 /**index.wxss**/
 .userinfo {
   display: flex;
@@ -20,6 +21,6 @@
   margin-top: 200px;
 }
 
-text {
-  color:#00f;
+.item {
+  line-height:160rpx;
 }

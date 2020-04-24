@@ -3,8 +3,18 @@
 const app = getApp()
 
 Page({
+  //相当于vue中的data,存放页面内部的数据
   data: {
-    motto: 'Hello 小程序',
+    c:'#0f0',
+    motto: 'Hello 微信小程序',
+    title:'小程序第一天学习',
+    arr:['vue','react','Flutter'],
+    users:[
+      { id:1001,name:'姚杰',age:20,work:'前端开发' },
+      { id:1002,name:'盖威',age:20,work:'java' },
+      { id:1003,name:'王迪',age:20,work:'UI' },
+      { id:1004,name:'苏宇浩',age:20,work:'PHP' },
+    ],
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
@@ -15,7 +25,8 @@ Page({
       url: '../logs/logs'
     })
   },
-  onLoad: function () {
+  onLoad() {
+    console.log('页面onload')
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -43,6 +54,18 @@ Page({
       })
     }
   },
+  onReady() {
+    console.log('index-onReady')
+  },
+  onShow() {
+    console.log('index-onShow')
+  },
+  onHide() {
+    console.log('index-onHide')
+  },
+  onUnload() {
+    console.log('index-onUnload')
+  },
   getUserInfo: function(e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo
@@ -50,5 +73,34 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  delete(e) {
+  //  console.log('删除',e)
+    let { idx }=e.currentTarget.dataset;//ES6解构赋值的写法
+    console.log('删除前：',this.data.users)
+
+    this.data.users.splice(idx,1);
+    this.setData({
+      users: this.data.users, //简单粗爆
+    })
+
+    console.log('删除后：',this.data.users)
+  },
+  add(e) {
+    console.log('添加的值：',e)
+  },
+  modi(e) {
+    let { idx } = e.currentTarget.dataset;//ES6解构赋值的写法
+    let title="ok"
+
+   // this.data.users[idx].name = this.data.users[idx].name+title;
+   //let tempItem='users['+idx+'].name'
+   let tempItem=`users[${idx}].name`;
+
+    this.setData({
+     // [tempItem]: this.data.users[idx].name+title
+     'users[2].name':'王迪哈哈'
+    });
+
   }
 })
